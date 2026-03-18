@@ -20,7 +20,7 @@
             background-color: #2b2a4c;
         }
 
-        .container {
+        .container-main {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -31,19 +31,43 @@
             box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.523);
         }
 
-        h2, p, ol {
+        h2, p {
             color: white;
             width: 1000px;
         }
 
         p {
             text-align: justify;
+        }
+
+        .p1 {
             margin-top: -15px;
         }
 
+        .lista {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 1000px;
+            background-color: #1a1a2f;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px;
+            box-shadow: 1px 5px 1px rgba(0, 0, 0, 0.122);
+        }
+
         ol {
-            text-align: justify;
+            text-align: left;
             margin-top: -15px;  
+            color: white;
+            width: 600px; 
+            line-height: 1.6;
+        }
+
+        .lista h2 {
+            text-align: center;
+            width: 100%;
         }
 
 
@@ -63,18 +87,47 @@
 
 
     <main>
-        <div class="container">
+        <div class="container-main">
             <img src="Imagens/estudante2.jpg" alt="" width="1520px" id="estudantes">
 
             <h2>Quem somos?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere deleniti placeat recusandae, maiores deserunt ut optio quos vel et dignissimos molestias corporis eius, laboriosam consectetur mollitia dolorem laborum, distinctio nam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, consequuntur. Itaque nihil, ipsa praesentium natus molestias ab voluptatibus aperiam cum quia quibusdam odio eum rerum aliquid, impedit vero vitae et! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt libero quibusdam similique cumque. Tempora vel error soluta animi ad quis vitae ullam nobis? Recusandae aspernatur laboriosam amet, nihil est distinctio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias iste suscipit dicta illum incidunt quos minus ipsam sunt animi nulla. Magni fuga consequatur illo doloribus numquam? Ut repellat ipsum perferendis!</p>
+            <p class="p1">
+                A Universidade Veritas é uma instituição dedicada ao estudo aprofundado da linguagem, da comunicação e da literatura, formada por uma comunidade acadêmica apaixonada pelo conhecimento e pela transformação social por meio das palavras. Somos professores, pesquisadores e estudantes unidos pelo compromisso com a excelência, a diversidade cultural e o pensamento crítico.
+                Nossa missão é formar profissionais capazes de compreender a complexidade da linguagem humana e suas múltiplas manifestações, promovendo o diálogo entre culturas, ideias e saberes. Valorizamos a inovação no ensino, o respeito às diferenças e a construção de um ambiente acolhedor, onde cada indivíduo pode desenvolver seu potencial de forma plena.
+            </p>
 
-            <h2>5 motivos para estudar aqui</h2>
-            <ol>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sapiente ipsa quaerat aliquid.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sunt libero, magni in corrupti quidem repudiandae atque, eveniet debitis est quam sed ut? Dignissimos libero illo, veniam ullam vero provident?</li>
-            </ol>
+            <p>
+                Mais do que uma universidade, somos um espaço de troca, criação e descoberta, onde o conhecimento é constantemente construído e compartilhado.
+            </p>
+
+            <div class="lista">
+                <div>
+                    <h2>5 motivos para estudar aqui</h2>
+                <ol>
+                    <li><strong>Excelência acadêmica: </strong>Cursos estruturados com base nas mais recentes pesquisas em Linguística e Letras.</li>
+
+                    <li><strong>Corpo docente qualificado: </strong>Professores experientes e atuantes no meio acadêmico e científico.</li>
+
+                    <li><strong>Formação interdisciplinar: </strong>Integração entre teoria, prática e diferentes áreas do conhecimento.</li>
+
+                    <li><strong>Ambiente inspirador: </strong>Espaço acolhedor que estimula a criatividade, o pensamento crítico e a expressão individual.</li>
+
+                    <li><strong>Foco no futuro: </strong>Preparação para atuar em um mundo globalizado, multicultural e em constante transformação.</li>
+                </ol>
+                </div>
+            
+            </div>
+
+
+
+            <h2>Objetivos</h2>
+            <p class="p1">
+                A Universidade Veritas tem como objetivo oferecer uma formação de excelência nas áreas de Linguística e Letras, promovendo o desenvolvimento do pensamento crítico, da comunicação eficaz e da sensibilidade cultural de seus estudantes.
+                A instituição busca incentivar a pesquisa científica e a produção de conhecimento, estimulando a criatividade, a análise e a interpretação das diversas formas de linguagem. Além disso, valoriza a integração entre teoria e prática, preparando os alunos para desafios acadêmicos e profissionais.
+                Outro objetivo importante é formar cidadãos éticos, conscientes e preparados para atuar em uma sociedade diversa e em constante transformação, contribuindo de forma significativa para o meio social e cultural.
+            </p><br>
         </div>
+        
     </main>
 
 
@@ -83,13 +136,12 @@
             <img src="Imagens/instagram.png" alt="" width="20px">
             <img src="Imagens/facebook.png" alt="" width="20px">
             <img src="Imagens/linkedin.png" alt="" width="20px">
+            <img src="Imagens/whatsapp.png" alt="" width="20px">
        </div>
 
        <div>
             <h4>Todos os direitos preservados @2026</h4> 
        </div>
-               
-        
     </footer>
 </body>
 </html>

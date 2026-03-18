@@ -15,6 +15,74 @@
 
         main{ 
             background-color: #2b2a4c;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            gap: 100px;
+        }
+
+        h2#entre-em-contato {
+            text-align: center;
+        }
+
+        /*FORMULÁRIO*/
+        form {
+            background-color: #121222;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        input {
+            width: 300px;
+            height: 30px;
+            border-radius: 3px;
+        }
+
+        #id-descricao {
+            height: 80px;
+            width: 300px;
+            text-wrap: wrap;
+        }
+
+        .botao{
+            width: 150px;
+            font-size: 15px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+
+        .botao:hover{
+            background-color: #121222;
+            border: 1px solid white;
+            color: white;
+        }
+
+        /*REDES SOCIAIS*/
+        section.redes-sociais {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 70px;
+        }
+
+        .redes-sociais p {
+            display: inline;
+            margin: none;
+        }
+
+        .redes-sociais h2 {
+            margin-top: -1px;
+        }
+
+        .redes-icons {
+            display: flex;
+            gap: 20px;
+            filter: invert(100%);
+        }
+
+        #section-logo {
+            margin-left: -68px;
+            margin-top: 30px;
         }
     </style>
 </head>
@@ -30,13 +98,67 @@
         </nav>
     </header>
 
-    <main></main>
+    <main>
+
+        
+        <div class="form">
+            <h2 id="entre-em-contato">Entre em contato conosco!</h2>
+            <form action=" method="POST">
+                <p>
+                    <label for="id-email">E-mail</label><br>
+                    <input type="text" name="email" id="id-email" required>
+                </p>
+                
+                <p>
+                    <label for="id-assunto">Assunto</label><br>
+                    <input type="text" name="assunto" id="id-assunto" required>
+                </p>
+
+                <p>
+                    <label for="id-descricao">Descrição</label><br>
+                    <textarea name="descricao" id="id-descricao"></textarea>
+                </p>
+                
+                <p>
+                    <input type="submit" value="ENVIAR" class="botao">
+                    <input type="reset" value="LIMPAR" class="botao">
+                </p>
+            </form>
+        </div>
+
+        <section class="redes-sociais">
+            <h2>Nossas redes sociais</h2>
+
+            <div class="redes-icons">
+                <div id="instagram">
+                    <img src="Imagens/instagram.png" alt="" width="40px"> 
+                </div>
+                
+                <div id="facebook">
+                    <img src="Imagens/facebook.png" alt="" width="40px">
+                </div>
+
+                <div id="linkedin">
+                    <img src="Imagens/linkedin.png" alt="" width="40px">
+                </div>
+
+                <div id="whatsapp">
+                    <img src="Imagens/whatsapp.png" alt="" width="40px">
+                </div>
+            </div>
+            
+            <img src="Imagens/V-logo.png" alt="" width="345px" id="section-logo">
+        </section>
+        
+
+    </main>
 
     <footer>
        <div class="footer-icons">
             <img src="Imagens/instagram.png" alt="" width="20px">
             <img src="Imagens/facebook.png" alt="" width="20px">
             <img src="Imagens/linkedin.png" alt="" width="20px">
+            <img src="Imagens/whatsapp.png" alt="" width="20px">
        </div>
 
        <div>
