@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="header-footer.css">
     <title>Quem somos</title>
 </head>
-<body class="bg-white">
+<body class="bg-[#2b2a4c]">
 
-    <header class="md:h-[110px] flex flex-col md:flex-row justify-between items-center px-4 md:px-10">
+    <header class="md:h-[110px] bg-white flex flex-col md:flex-row justify-between items-center px-4 md:px-10">
         <img src="Imagens/V-transp.png" alt="Logo" class="w-[180px] md:w-[225px] md:-ml-[30px] object-contain">
 
         <nav class="md:mr-10 font-bold text-[14px] sm:text-[16px] md:text-[18px] text-black whitespace-nowrap pb-4 md:pb-0">
@@ -21,28 +21,29 @@
         </nav>
     </header>
 
-    <main class="bg-[#2b2a4c] grid grid-cols-1 items-center">
+    <main class="grid grid-cols-1 place-items-center">
         <div>
-            <img src="Imagens/estudante2.jpg" alt="" class="w-full shadow-[1px_2px_6px_rgba(0,0,0,0.523)]" id="estudantes">
+            <img src="Imagens/estudante2-sm.jpg" alt="mobile" class="block lg:hidden w-full">
+            <img src="Imagens/estudante2.jpg" alt="desktop" class="hidden lg:block w-full">
         </div>
             
         <!--Texto "Quem somos?"-->
-        <div>
-            <h2 class="text-white text-3xl font-bold mt-8 mb-4 w-full">Quem somos?</h2>
-            <p class="text-white text-justify -mt-[15px] w-full">
+        <div class="mx-6 sm:w-11/12 lg:w-4/5">
+            <h2 class="text-white text-3xl font-bold mt-8 mb-4">Quem somos?</h2>
+            <p class="text-white text-justify w-full lg:text-lg">
                 A Universidade Veritas é uma instituição dedicada ao estudo aprofundado da linguagem, da comunicação e da literatura, formada por uma comunidade acadêmica apaixonada pelo conhecimento e pela transformação social por meio das palavras. Somos professores, pesquisadores e estudantes unidos pelo compromisso com a excelência, a diversidade cultural e o pensamento crítico.
                 Nossa missão é formar profissionais capazes de compreender a complexidade da linguagem humana e suas múltiplas manifestações, promovendo o diálogo entre culturas, ideias e saberes. Valorizamos a inovação no ensino, o respeito às diferenças e a construção de um ambiente acolhedor, onde cada indivíduo pode desenvolver seu potencial de forma plena.
             </p>
 
-            <p class="text-white text-justify mt-4 w-full">
+            <p class="text-white text-justify mt-4 w-full lg:text-lg">
                 Mais do que uma universidade, somos um espaço de troca, criação e descoberta, onde o conhecimento é constantemente construído e compartilhado.
             </p>
         </div>
             
         <!--5 motivos-->
-        <div class="bg-[#1a1a2f] p-5 rounded-[5px] my-5 shadow-[1px_5px_1px_rgba(0,0,0,0.122)] w-full flex flex-col items-center">
+        <div class="bg-[#1a1a2f] p-5 my-6 shadow-[1px_5px_1px_rgba(0,0,0,0.122)] max-w-5/12  flex flex-col items-center lg:text-lg">
             <h2 class="text-white text-2xl font-bold mb-4 text-center w-full">5 motivos para estudar aqui</h2>
-            <ol class="text-white text-left -mt-[15px] leading-[1.6] max-w-[600px] list-decimal list-inside">
+            <ol class="text-white text-left -mt-[15px] leading-[1.6] list-decimal list-inside">
                 <li><strong>Excelência acadêmica: </strong>Cursos estruturados com base nas mais recentes pesquisas em Linguística e Letras.</li>
                 <li><strong>Corpo docente qualificado: </strong>Professores experientes e atuantes no meio acadêmico e científico.</li>
                 <li><strong>Formação interdisciplinar: </strong>Integração entre teoria, prática e diferentes áreas do conhecimento.</li>
@@ -52,27 +53,24 @@
         </div>
 
         <!--Objetivos da universidade-->
-        <div class="mb-5">
-            <h2 class="text-white text-3xl font-bold mt-8 mb-4 w-full">Objetivos</h2>
-            <p class="text-white text-justify -mt-[15px] w-full">
+        <div class="mx-6 sm:w-11/12 lg:w-4/5">
+            <h2 class="text-white text-3xl font-bold mb-4">Objetivos</h2>
+            <p class="text-white text-justify w-full lg:text-lg">
                 A Universidade Veritas tem como objetivo oferecer uma formação de excelência nas áreas de Linguística e Letras, promovendo o desenvolvimento do pensamento crítico, da comunicação eficaz e da sensibilidade cultural de seus estudantes.
                 A instituição busca incentivar a pesquisa científica e a produção de conhecimento, estimulando a criatividade, a análise e a interpretação das diversas formas de linguagem. Além disso, valoriza a integração entre teoria e prática, preparando os alunos para desafios acadêmicos e profissionais.
                 Outro objetivo importante é formar cidadãos éticos, conscientes e preparados para atuar em uma sociedade diversa e em constante transformação, contribuindo de forma significativa para o meio social e cultural.
             </p>
         </div>
-
-            
-
     </main>
 
-    <footer class="min-h-[50px] flex flex-col items-center p-[5px] text-black">
-       <div class="mt-[10px] -mb-[15px] space-x-1 flex">
+    <footer class="min-h-[50px] bg-white flex flex-col items-center p-3 mt-5 text-black">
+       <div class="space-x-1 flex mb-1">
             <img src="Imagens/instagram.png" alt="" width="20px">
             <img src="Imagens/facebook.png" alt="" width="20px">
             <img src="Imagens/linkedin.png" alt="" width="20px">
             <img src="Imagens/whatsapp.png" alt="" width="20px">
        </div>
-       <div class="mt-5">
+       <div class="">
             <h4 class="font-bold">Todos os direitos preservados @2026</h4> 
        </div>
     </footer>
