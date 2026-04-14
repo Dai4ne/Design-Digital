@@ -3,144 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="header-footer.css">
     <title>Quem somos</title>
-
-    <style>
-        body {
-            padding: 0px;
-            margin: 0px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-        }
-
-        main {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #2b2a4c;
-        }
-
-        .container-main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        #estudantes {
-            background-color: #22213b;
-            box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.523);
-        }
-
-        h2, p {
-            color: white;
-            width: 1000px;
-        }
-
-        p {
-            text-align: justify;
-        }
-
-        .p1 {
-            margin-top: -15px;
-        }
-
-        .lista {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 1000px;
-            background-color: #1a1a2f;
-            padding: 20px;
-            border-radius: 5px;
-            margin: 20px;
-            box-shadow: 1px 5px 1px rgba(0, 0, 0, 0.122);
-        }
-
-        ol {
-            text-align: left;
-            margin-top: -15px;  
-            color: white;
-            width: 600px; 
-            line-height: 1.6;
-        }
-
-        .lista h2 {
-            text-align: center;
-            width: 100%;
-        }
-
-
-    </style>
 </head>
+<body class="bg-white">
 
-<body>
-    <header>
-        <img src="Imagens/V-transp.png" alt="Logo" width="225px" class="logo">
+    <header class="md:h-[110px] flex flex-col md:flex-row justify-between items-center px-4 md:px-10">
+        <img src="Imagens/V-transp.png" alt="Logo" class="w-[180px] md:w-[225px] md:-ml-[30px] object-contain">
 
-        <nav>
-            <a href="index.html">Homepage</a> |
-            <a href="quem.html">Quem somos</a> |
+        <nav class="md:mr-10 font-bold text-[14px] sm:text-[16px] md:text-[18px] text-black whitespace-nowrap pb-4 md:pb-0">
+            <a href="index.html">Homepage</a>
+            <span class="mx-1 md:mx-2">|</span>
+            <a href="quem.html">Quem somos</a>
+            <span class="mx-1 md:mx-2">|</span>
             <a href="contatos.html">Contato</a>
         </nav>
     </header>
 
-
-    <main>
-        <div class="container-main">
-            <img src="Imagens/estudante2.jpg" alt="" width="1520px" id="estudantes">
-
-            <h2>Quem somos?</h2>
-            <p class="p1">
+    <main class="bg-[#2b2a4c] grid grid-cols-1 items-center">
+        <div>
+            <img src="Imagens/estudante2.jpg" alt="" class="w-full shadow-[1px_2px_6px_rgba(0,0,0,0.523)]" id="estudantes">
+        </div>
+            
+        <!--Texto "Quem somos?"-->
+        <div>
+            <h2 class="text-white text-3xl font-bold mt-8 mb-4 w-full">Quem somos?</h2>
+            <p class="text-white text-justify -mt-[15px] w-full">
                 A Universidade Veritas é uma instituição dedicada ao estudo aprofundado da linguagem, da comunicação e da literatura, formada por uma comunidade acadêmica apaixonada pelo conhecimento e pela transformação social por meio das palavras. Somos professores, pesquisadores e estudantes unidos pelo compromisso com a excelência, a diversidade cultural e o pensamento crítico.
                 Nossa missão é formar profissionais capazes de compreender a complexidade da linguagem humana e suas múltiplas manifestações, promovendo o diálogo entre culturas, ideias e saberes. Valorizamos a inovação no ensino, o respeito às diferenças e a construção de um ambiente acolhedor, onde cada indivíduo pode desenvolver seu potencial de forma plena.
             </p>
 
-            <p>
+            <p class="text-white text-justify mt-4 w-full">
                 Mais do que uma universidade, somos um espaço de troca, criação e descoberta, onde o conhecimento é constantemente construído e compartilhado.
             </p>
-
-            <div class="lista">
-                <div>
-                    <h2>5 motivos para estudar aqui</h2>
-                <ol>
-                    <li><strong>Excelência acadêmica: </strong>Cursos estruturados com base nas mais recentes pesquisas em Linguística e Letras.</li>
-
-                    <li><strong>Corpo docente qualificado: </strong>Professores experientes e atuantes no meio acadêmico e científico.</li>
-
-                    <li><strong>Formação interdisciplinar: </strong>Integração entre teoria, prática e diferentes áreas do conhecimento.</li>
-
-                    <li><strong>Ambiente inspirador: </strong>Espaço acolhedor que estimula a criatividade, o pensamento crítico e a expressão individual.</li>
-
-                    <li><strong>Foco no futuro: </strong>Preparação para atuar em um mundo globalizado, multicultural e em constante transformação.</li>
-                </ol>
-                </div>
+        </div>
             
-            </div>
+        <!--5 motivos-->
+        <div class="bg-[#1a1a2f] p-5 rounded-[5px] my-5 shadow-[1px_5px_1px_rgba(0,0,0,0.122)] w-full flex flex-col items-center">
+            <h2 class="text-white text-2xl font-bold mb-4 text-center w-full">5 motivos para estudar aqui</h2>
+            <ol class="text-white text-left -mt-[15px] leading-[1.6] max-w-[600px] list-decimal list-inside">
+                <li><strong>Excelência acadêmica: </strong>Cursos estruturados com base nas mais recentes pesquisas em Linguística e Letras.</li>
+                <li><strong>Corpo docente qualificado: </strong>Professores experientes e atuantes no meio acadêmico e científico.</li>
+                <li><strong>Formação interdisciplinar: </strong>Integração entre teoria, prática e diferentes áreas do conhecimento.</li>
+                <li><strong>Ambiente inspirador: </strong>Espaço acolhedor que estimula a criatividade, o pensamento crítico e a expressão individual.</li>
+                <li><strong>Foco no futuro: </strong>Preparação para atuar em um mundo globalizado, multicultural e em constante transformação.</li>
+            </ol>
+        </div>
 
-
-
-            <h2>Objetivos</h2>
-            <p class="p1">
+        <!--Objetivos da universidade-->
+        <div class="mb-5">
+            <h2 class="text-white text-3xl font-bold mt-8 mb-4 w-full">Objetivos</h2>
+            <p class="text-white text-justify -mt-[15px] w-full">
                 A Universidade Veritas tem como objetivo oferecer uma formação de excelência nas áreas de Linguística e Letras, promovendo o desenvolvimento do pensamento crítico, da comunicação eficaz e da sensibilidade cultural de seus estudantes.
                 A instituição busca incentivar a pesquisa científica e a produção de conhecimento, estimulando a criatividade, a análise e a interpretação das diversas formas de linguagem. Além disso, valoriza a integração entre teoria e prática, preparando os alunos para desafios acadêmicos e profissionais.
                 Outro objetivo importante é formar cidadãos éticos, conscientes e preparados para atuar em uma sociedade diversa e em constante transformação, contribuindo de forma significativa para o meio social e cultural.
-            </p><br>
+            </p>
         </div>
-        
+
+            
+
     </main>
 
-
-    <footer>
-       <div class="footer-icons">
+    <footer class="min-h-[50px] flex flex-col items-center p-[5px] text-black">
+       <div class="mt-[10px] -mb-[15px] space-x-1 flex">
             <img src="Imagens/instagram.png" alt="" width="20px">
             <img src="Imagens/facebook.png" alt="" width="20px">
             <img src="Imagens/linkedin.png" alt="" width="20px">
             <img src="Imagens/whatsapp.png" alt="" width="20px">
        </div>
-
-       <div>
-            <h4>Todos os direitos preservados @2026</h4> 
+       <div class="mt-5">
+            <h4 class="font-bold">Todos os direitos preservados @2026</h4> 
        </div>
     </footer>
 </body>

@@ -1,51 +1,24 @@
-/*HEADER*/
-header {
-    height: 110px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 20px;
+/* Configurações Globais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-nav {
-    margin-right: 40px;
+nav a {
+    transition: all 0.3s ease;
+    display: inline-block; /* Garante que o padding do hover funcione bem */
 }
 
-.logo {
-    margin-left: -30px;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-a:hover{
+nav a:hover {
     background-color: #22213b;
-    color: white;
-    padding: 3px;
+    color: white !important;
+    padding: 3px 6px;
     border-radius: 2px;
-    font-weight: bold;
 }
 
-/*FOOTER*/
-footer{
-    height: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: black;
-    padding: 5px;
-    font-family: 'Times New Roman', Times, serif;
-}
 
-.footer-icons {
-    margin-top: 10px;
-    margin-bottom: -15px;
-}
-
-.footer-icons img {
-    margin: 0px 5px;
+/* Filtro para inverter cores dos ícones na página de contato */
+.redes-icons img {
+    filter: invert(100%);
 }
