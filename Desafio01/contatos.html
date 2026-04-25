@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="header-footer.css">
+    <title>Contatos</title>
+</head>
+<body class="bg-[#2b2a4c]">
+
+    <header class="md:h-[110px] bg-white flex flex-col md:flex-row justify-between items-center px-4 md:px-10">
+        <img src="Imagens/V-transp.png" alt="Logo" class="w-[180px] md:w-[225px] md:-ml-[30px] object-contain">
+
+        <nav class="md:mr-10 font-bold text-[14px] sm:text-[16px] md:text-[18px] text-black whitespace-nowrap pb-4 md:pb-0">
+            <a href="index.html">Homepage</a>
+            <span class="mx-1 md:mx-2">|</span>
+            <a href="quem.html">Quem somos</a>
+            <span class="mx-1 md:mx-2">|</span>
+            <a href="contatos.html">Contato</a>
+        </nav>
+    </header>
+
+    <main class="md:min-h-[500px] grid grid-cols-1 lg:grid-cols-2 place-items-center mx-6 mt-7">
+        
+        <div class="form-container mb-7 2xl:-ml-[-200px]">
+            <h2 id="entre-em-contato" class="text-center text-2xl font-bold text-white mb-4 ">Entre em contato conosco!</h2>
+
+            <form action="" method="POST" class="bg-[#121222] text-white p-6 rounded-[5px] space-y-4">
+                <p>
+                    <label for="id-email">E-mail</label><br>
+                    <input type="text" name="email" id="id-email" required class="w-80 h-8 rounded-[3px] text-black px-2">
+                </p>
+                
+                <p>
+                    <label for="id-assunto">Assunto</label><br>
+                    <input type="text" name="assunto" id="id-assunto" required class="w-80 h-8 rounded-[3px] text-black px-2">
+                </p>
+
+                <p>
+                    <label for="id-descricao">Descrição</label><br>
+                    <textarea name="descricao" id="id-descricao" class=" w-80 h-20 rounded-[3px] text-black px-2 py-1"></textarea>
+                </p>
+                
+                <p class="flex gap-2">
+                    <input type="submit" value="ENVIAR" class="enviar w-1/2 text-[15px] rounded-[3px] font-bold bg-white text-black">
+
+                    <input type="reset" value="LIMPAR" class="limpar w-1/2 rounded-[3px] font-bold bg-white text-black">
+                </p>
+            </form>
+        </div>
+
+        <section class="redes-sociais grid grid-cols-1 place-items-center mb-[70px] 2xl:-mr-[-200px]">
+            <h2 class="text-2xl font-bold text-white mb-4 text-center">Nossas redes sociais</h2>
+
+            <div class="redes-icons flex gap-5">
+                <img src="Imagens/instagram.png" alt="" width="40px"> 
+                <img src="Imagens/facebook.png" alt="" width="40px">
+                <img src="Imagens/linkedin.png" alt="" width="40px">
+                <img src="Imagens/whatsapp.png" alt="" width="40px">
+            </div>
+            
+            <img src="Imagens/V-logo.png" alt="" width="300px" class="mt-5">
+        </section>
+        
+    </main>
+
+    <footer class="min-h-[50px] bg-white flex flex-col items-center p-3 mt-5 text-black">
+       <div class="space-x-1 flex mb-1">
+            <img src="Imagens/instagram.png" alt="" width="20px">
+            <img src="Imagens/facebook.png" alt="" width="20px">
+            <img src="Imagens/linkedin.png" alt="" width="20px">
+            <img src="Imagens/whatsapp.png" alt="" width="20px">
+       </div>
+       <div class="">
+            <h4 class="font-bold">Todos os direitos preservados @2026</h4> 
+       </div>
+    </footer>
+</body>
+</html>
