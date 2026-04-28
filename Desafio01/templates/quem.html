@@ -1,30 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="header-footer.css">
-    <title>Quem somos</title>
-</head>
-<body class="bg-[#2b2a4c]">
+{% extends 'base.html' %}
 
-    <header class="md:h-[110px] bg-white flex flex-col md:flex-row justify-between items-center px-4 md:px-10">
-        <img src="Imagens/V-transp.png" alt="Logo" class="w-[180px] md:w-[225px] md:-ml-[30px] object-contain">
-
-        <nav class="md:mr-10 font-bold text-[14px] sm:text-[16px] md:text-[18px] text-black whitespace-nowrap pb-4 md:pb-0">
-            <a href="index.html">Homepage</a>
-            <span class="mx-1 md:mx-2">|</span>
-            <a href="quem.html">Quem somos</a>
-            <span class="mx-1 md:mx-2">|</span>
-            <a href="contatos.html">Contato</a>
-        </nav>
-    </header>
+{% block conteudo %}
 
     <main class="grid grid-cols-1 place-items-center">
         <div>
-            <img src="Imagens/estudante2-sm.jpg" alt="mobile" class="block lg:hidden w-full">
-            <img src="Imagens/estudante2.jpg" alt="desktop" class="hidden lg:block w-full">
+            <img src="{{ url_for('static', filename='estudante2-sm.jpg') }}" alt="mobile" class="block lg:hidden w-full">
+            <img src="{{ url_for('static', filename='estudante2.jpg') }}" alt="desktop" class="hidden lg:block w-full">
         </div>
             
         <!--Texto "Quem somos?"-->
@@ -62,17 +43,4 @@
             </p>
         </div>
     </main>
-
-    <footer class="min-h-[50px] bg-white flex flex-col items-center p-3 mt-5 text-black">
-       <div class="space-x-1 flex mb-1">
-            <img src="Imagens/instagram.png" alt="" width="20px">
-            <img src="Imagens/facebook.png" alt="" width="20px">
-            <img src="Imagens/linkedin.png" alt="" width="20px">
-            <img src="Imagens/whatsapp.png" alt="" width="20px">
-       </div>
-       <div class="">
-            <h4 class="font-bold">Todos os direitos preservados @2026</h4> 
-       </div>
-    </footer>
-</body>
-</html>
+{% endblock %}

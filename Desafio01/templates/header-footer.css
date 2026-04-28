@@ -18,10 +18,10 @@ nav a:hover {
 }
 
 
-/*Inverte cores dos ícones na página de contato */
+/*Inverte cores dos ícones na página de contato 
 .redes-icons img {
     filter: invert(100%);
-}
+}*/
 
 .enviar:hover, .limpar:hover{
     cursor: pointer;
