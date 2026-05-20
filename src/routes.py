@@ -1,7 +1,14 @@
-from src import app 
-from flask import render_template 
+import sys
+import os
+sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
-@app.route("/")
+from flask import Flask, render_template
+
+app = Flask(__name__, 
+            template_folder='../src/templates', 
+            static_folder='../src/static')
+
+@app.route('/')
 @app.route('/index')
 def index():
     return render_template('index.html')
