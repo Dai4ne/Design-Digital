@@ -1,4 +1,4 @@
-from Desafio01 import app 
+from src import app 
 from flask import render_template 
 
 @app.route("/")
