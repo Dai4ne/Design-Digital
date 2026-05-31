@@ -1,12 +1,23 @@
 {% extends 'base.html' %}
 
 {% block conteudo %}
+
+    <div id="mensagem-sucesso"
+         class="fixed top-6 left-1/2 -translate-x-1/2 z-50
+                bg-green-600 text-white px-6 py-3 rounded-lg shadow-lg text-center font-bold transition-all duration-700 ease-in-out opacity-0 pointer-events-none -translate-y-4"> Formulário enviado com sucesso! Entraremos em contato em breve.
+    </div>
+
     <main class="md:min-h-[500px] grid grid-cols-1 lg:grid-cols-2 place-items-center mx-6 mt-7">
         
         <div class="form-container mb-7 2xl:-ml-[-200px]">
             <h2 id="entre-em-contato" class="text-center text-2xl font-bold text-white mb-4 ">Entre em contato conosco!</h2>
 
-            <form action="" method="POST" class="bg-[#121222] text-white p-6 rounded-[5px] space-y-4">
+            <form id="meu-formulario" action="" method="POST" class="bg-[#121222] text-white p-6 rounded-[5px] space-y-4">
+                <p>
+                    <label for="id-nome">Nome</label><br>
+                    <input type="text" name="nome" id="id-nome" required class="w-80 h-8 rounded-[3px] text-black px-2">
+                </p>
+
                 <p>
                     <label for="id-email">E-mail</label><br>
                     <input type="text" name="email" id="id-email" required class="w-80 h-8 rounded-[3px] text-black px-2">
@@ -40,8 +51,24 @@
                 <img src="{{ url_for('static', filename='whatsapp.png') }}" alt="" width="40px">
             </div>
             
-            <img src="{{ url_for('static', filename='V-logo.png') }}" alt="" width="300px" class="mt-5">
+            <img src="{{ url_for('static', filename='V-logo.png') }}" alt="" width="400px" class="mt-5">
         </section>
         
     </main>
+
+    <script>
+        document.getElementById('meu-formulario').addEventListener('submit', function(event) {
+            const msg = document.getElementById('mensagem-sucesso');
+
+            //Aparece e sobe
+            msg.classList.remove('opacity-0', '-translate-y-4', 'pointer-events-none');
+            msg.classList.add('opacity-100', 'translate-y-0');
+
+            //Some aos poucos
+            setTimeout(() => {
+                msg.classList.remove('opacity-100', 'translate-y-0');
+                msg.classList.add('opacity-0', '-translate-y-4', 'pointer-events-none');
+            }, 3500);
+        });
+    </script>
 {% endblock %}
