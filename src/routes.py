@@ -8,7 +8,8 @@ from dotenv import load_dotenv
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
 #Carrega as config do .env 
-load_dotenv()
+# O '../' avisa ao Python para sair da pasta 'src' e procurar na raiz do projeto
+load_dotenv(os.path.join(os.path.dirname(__file__), '../.env'))
 
 app = Flask(__name__, 
             template_folder='../src/templates', 
