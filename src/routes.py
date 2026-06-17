@@ -56,8 +56,20 @@ def contatos():
         finally:
             conexao.close()
 
-    return render_template('contatos.html')
+    conexao = conexao_db()
+    try:
+        with conexao.cursor() as cursor:
+            query1 = '''
+                SELECT assunto, descricao FROM contatos
+                ORDER BY id DESC
+                LIMIT 7
+            '''
+            cursor.execute(query1)
+            duvidas = cursor.fetchall()
+    finally:
+        conexao.close()
 
+    return render_template('contatos.html', duvidas=duvidas)
 
 @app.route('/quem')
 def quem():
