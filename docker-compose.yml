@@ -8,7 +8,7 @@ services:
     restart: always
     environment:
       MYSQL_DATABASE: universidade_veritas
-      MYSQL_ROOT_PASSWORD: sua_senha_aqui
+      MYSQL_ROOT_PASSWORD: '@17072007Dks'
     ports:
       - "3306:3306"
     volumes:
